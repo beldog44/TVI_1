@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="TVISION INSIGHTS(TVI)は、テレビの「視聴質」を計測する会社です。
+                                          独自開発した中距離に特化した最先端の人体認識技術を用いて、リビングルームにおけるテレビの視聴態勢をデータ化。
+                                          世界的にも例がなく、極めてユニークなデータセットを創業以来取得・蓄積しています。">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CONTACT | TVision Insights (TVI)</title>
+        <link rel="shortcut icon" href="../common/img/favicon.ico" />
+        <link rel="stylesheet" href="./css/contact.css">
+        <script type="text/javascript" src="../common/js/libs.js"></script>
+        <script type="text/javascript" src="./js/contact.js"></script>
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-77442353-1', 'auto');
+         ga('send', 'pageview');
+        </script>
+    </head>
+<body id="bodyContact">
+
+<div id="contactBlock">
+  <h1>こちらのフォームより、お気軽にお問い合わせください。</h1>
+  <form id="mailformpro" action="mailformpro/mailformpro.cgi" method="POST">
+    <div id="contactItems">
+      <div id="contactLeft">
+        <div><input type="text" name="会社名" size="40" required="required" placeholder="会社名を入力ください（必須）"></div>
+        <div><input type="text" name="会社所在地" size="40" placeholder="会社所在地を入力ください"></div>
+        <div><input type="text" name="部署" size="40" placeholder="部署を入力ください"></div>
+        <div><input type="text" name="役職" size="40" placeholder="役職を入力ください"></div>
+        <div><input type="text" name="氏名" size="40" required="required" placeholder="氏名を入力ください（必須）"></div>
+        <div><input type="email" data-type="email" name="email" size="40" required="required" placeholder="メールアドレスを入力ください（必須）"></div>
+        <div><input type="text" name="電話番号" size="40" required="required" placeholder="電話番号を入力ください（必須）"></div>
+      </div>
+      <div id="contactRight">
+        <div><textarea name="お問い合わせ内容" rows="10" cols="40" placeholder="お問い合わせ内容を入力ください"></textarea></div>
+      </div>
+    </div>
+    <div id="submitBtn" class="formBtn"><button type="submit">送信する</button></div>
+  </form>
+  <script type="text/javascript" id="mfpjs" src="mailformpro/mailformpro.cgi" charset="UTF-8"></script>
+</div>
+
+</body>
+</html>

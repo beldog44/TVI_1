@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* recruit ---------------------------------------
+------------------------------------------------ */
+#bodyRecruit {
+  min-width: 980px;
+  background: url(../img/bg_body.jpg) no-repeat center top;
+  background-size: 100% auto;
+}
+
+#recruitBlock.section {
+  padding: 110px 0 10px 0;
+}
+#recruitBlock h2 {
+  margin-bottom: 85px;
+  text-align: center;
+}
+#recruitBlock #recruitLead {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.recruitList {
+  padding: 0 20px 30px 20px;
+}
+.recruitList h3 {
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  background: -moz-linear-gradient(top,  #fff 0%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top,  #fff 0%,#f6f6f6 100%);
+  background: linear-gradient(to bottom,  #fff 0%,#f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f6f6f6',GradientType=0 );
+  cursor: pointer;
+}
+.recruitList h3 span {
+  display: block;
+  padding: 20px 0;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #444;
+  text-align: center;
+  background-image: url(../img/icon_down.png);
+  background-repeat: no-repeat;
+  background-position: 855px center;
+}
+.recruitList h3.open span {
+  background-image: url(../img/icon_up.png);
+}
+.recruitList .accordion {
+  padding: 9px 39px 39px;
+  border: 1px solid #ddd;
+  background: #fff;
+  line-height: 1.4;
+  color: #000;
+}
+.recruitList .accordion h4 {
+  margin-bottom: 10px;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.recruitList .accordion p,
+.recruitList .accordion li {
+  font-size: 15px;
+}
+.recruitList .accordion ul {
+  padding-left: 1.5em;
+}
+.recruitList .accordion ul li {
+  list-style: disc;
+}

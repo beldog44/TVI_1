@@ -1,0 +1,476 @@
+@charset "utf-8";
+
+/* Reset CSS 2.0 -------------------------------
+------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+  vertical-align: bottom;
+}
+strong {
+  font-weight: bold;
+}
+
+
+/* basic style ---------------------------------
+------------------------------------------------ */
+
+/* 01. base ----- */
+html, body { height: 100%; }
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+	line-height: 1.6;
+	color: #333;
+  background: #fff;
+	-webkit-text-size-adjust: 100%;
+  text-align: center;
+}
+html {
+  overflow-y: scroll;
+}
+
+a:link {
+  color: #00a0d2;
+	text-decoration: underline;
+  -webkit-tap-highlight-color: #005a76;
+}
+a:visited {
+  color: #00a0d2;
+	text-decoration: underline;
+}
+a:hover {
+  color: #e60012;
+	text-decoration: none;
+  outline: none;
+}
+a:active {
+	color: #e60012;
+	text-decoration: none;
+  outline: none;
+}
+::-moz-selection {
+  background: #005a76;
+  color:#fff;
+  text-shadow: none;
+}
+::selection {
+  background:#005a76;
+  color:#fff;
+  text-shadow: none;
+}
+a img {
+  -webkit-transition: all  0.5s ease;
+  -moz-transition: all  0.5s ease;
+  -o-transition: all  0.5s ease;
+  transition: all  0.5s ease;
+}
+a:hover img {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after { 
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+/* 02. base layout ----- */
+/* loading */
+#loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/loading.gif) no-repeat center center #fff;
+  background-size:50px;
+  z-index: 2000;
+}
+
+/* wrapper */
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* header */
+#header {
+  position: relative;
+  width: 1080px;
+  height: 100px;
+  margin: 0 auto;
+  z-index: 10;
+}
+#header h1 {
+  width: 198px;
+  float: left;
+}
+
+#header:before,
+#header:after { 
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+} 
+#header:after {
+  clear: both;
+}
+#header {
+  zoom: 1;
+}
+
+
+/* gNav */
+.gNav {
+  width: 825px;
+  float: right;
+}
+.gNav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 55px 15px 0 15px;
+}
+.gNav ul li:first-child {
+  margin-left: 0;
+}
+.gNav ul li.current {
+  padding-top: 51px;
+  border-top: 4px solid #61afe0;
+}
+
+/* floatingNav */
+#floatingNav {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+#floatingInner {
+  position: relative;
+  width: 1080px;
+  height: 100px;
+  margin: 0 auto;
+}
+#floatingInner h1 {
+  width: 198px;
+  float: left;
+}
+
+#floatingInner:before,
+#floatingInner:after { 
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+} 
+#floatingInner:after {
+  clear: both;
+}
+#floatingInner {
+  zoom: 1;
+}
+
+
+/* section */
+.section {
+  width: 980px;
+  margin: 0 auto;
+  text-align: left;
+}
+.section:before,
+.section:after { 
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+} 
+.section:after {
+  clear: both;
+}
+.section {
+  zoom: 1;
+}
+
+/* pageTop */
+#pageTop {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  right: 30px;
+  bottom: 60px;
+  z-index: 1000;
+}
+#pageTop a {
+  display: block;
+}
+
+/* footer */
+#footer {
+  width: 980px;
+  padding: 75px 0 20px 0;
+  margin: 0 auto;
+}
+#footer #fIcon,
+#footer #fNav,
+#footer #fSns,
+#footer li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer #fNav {
+  margin-left: 15px;
+}
+#footer #fNav li {
+  margin-left: 55px;
+}
+#footer #fSns {
+  margin-left: 55px;
+}
+#footer #fSns li {
+  margin-left: 15px;
+}
+
+#copyright {
+  padding: 85px 0 0 0;
+  color: #ccc;
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+#copyright span {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/* 03. decoration ----- */
+
+/* ブロック */
+.whiteBlock,
+.grayBlock,
+.pGrayBlock {
+  min-width: 980px;
+  padding: 50px 0;
+}
+.grayBlock {
+  background: #eee;
+}
+.pGrayBlock {
+  background: #f6f6f6;
+}
+
+/* 空き調整 */
+.mr0 {margin-right:0!important;}
+.mb20 {margin-bottom:20px!important;}
+.mb30 {margin-bottom:30px!important;}
+.pb0 {padding-bottom:0!important;}
+.pb30 {padding-bottom:30px!important;}
+.pb40 {padding-bottom:40px!important;}
+
+/* ボタン */
+.redBtn a {
+  display: block;
+  width: 490px;
+  padding: 20px 0;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #e74b3b;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transition: all  0.5s ease;
+  -moz-transition: all  0.5s ease;
+  -o-transition: all  0.5s ease;
+  transition: all  0.5s ease;
+}
+.redBtn a:hover {
+  background: #b41919;
+  text-decoration: none;
+}
+
+/* slider */
+.slider {
+  position: relative;
+  margin-bottom: 30px;
+}
+.slider .bx-wrapper {
+  position: relative;
+}
+.slider .bx-controls-direction a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 54px;
+  height: 54px;
+  margin-top: -27px;
+  text-indent: -999em;
+  outline: none;
+  -webkit-transition: opacity  0.5s ease;
+  -moz-transition: opacity  0.5s ease;
+  transition: opacity  0.5s ease;
+}
+.slider .bx-controls-direction a.bx-prev {
+  left: -79px;
+  background: url(../img/arrow_prev.png);
+}
+.slider .bx-controls-direction a.bx-next {
+  right: -79px;
+  background: url(../img/arrow_next.png);
+}
+.slider .bx-controls-direction a:hover {
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+.slider .bx-pager {
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #999;
+  padding-top: 20px;
+}
+.slider .bx-pager.bx-default-pager a {
+  background: #999;
+  text-indent: -9999px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  outline: 0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.slider .bx-pager.bx-default-pager a:hover,
+.slider .bx-pager.bx-default-pager a.active,
+.slider .bx-pager.bx-default-pager a:focus {
+  background: #61afe0;
+}
+.slider .bx-pager-item,
+.slider .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.slider .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+@media screen and (max-width: 1140px) {
+  .slider {
+    padding-left: 60px;
+    padding-right: 80px;
+  }
+  .slider .bx-controls-direction a.bx-prev {
+    left: 0;
+  }
+  .slider .bx-controls-direction a.bx-next {
+    right: 0;
+  }
+}
+
+/* contact */
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  left: 0;
+  overflow: hidden;
+}
+#contactBlock {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #666;
+  background: rgba(51,51,51,0.95);
+  z-index: 10000;
+  overflow-y: auto;
+}
+#contactBlock #contactClose {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+#contactFrame {
+  position: absolute;
+  width: 910px;
+  top: -850px;
+  left: 50%;
+  margin-left: -455px;
+  -webkit-transition: all  0.5s ease;
+  -moz-transition: all  0.5s ease;
+  -o-transition: all  0.5s ease;
+  transition: all  0.5s ease;
+}
+#contactFrame.show {
+  top: 0;
+}

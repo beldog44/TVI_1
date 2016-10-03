@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* solution ---------------------------------------
+------------------------------------------------ */
+#solutionMain {
+  position: relative;
+  min-width: 980px;
+  height: 658px;
+  background: url(../img/main_img.jpg) no-repeat center top #000;
+}
+#solutionMain h2 {
+  width: 980px;
+  padding: 170px 0 0 0;
+  margin: 0 auto;
+  text-align: right;
+}
+#solutionMain h2 img {
+  margin-right: 110px;
+}
+#solutionInner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  height: 275px;
+  min-width: 980px;
+  background: #3c84d1;
+  background: rgba(60,132,209,0.5);
+}
+#solutionInner p {
+  padding-top: 40px;
+}
+
+#realDataSec {
+  min-width: 980px;
+  background: #f6f6f6;
+}
+#realDataSec h2 {
+  padding: 100px 0;
+}
+#realDataImg {
+  width: 100%;
+  min-width: 980px;
+  height: 550px;
+  text-align: left;
+  text-indent: -999em;
+  background: url(../img/img_realdata.jpg) no-repeat top center #efefef;
+  border-bottom: 1px solid #ddd;
+}
+
+#contentsCheckSec {
+  padding: 100px 0 90px 0;
+}
+#contentsCheckSec h2 {
+  margin-bottom: 30px;
+}
+#contentsCheckSec .lead {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+#checkImgs {
+  min-width: 980px;
+  background: url(../img/bg_check_img.gif) repeat-x center top;
+ 
+}
+#checkImgsInner {
+  min-width: 980px;
+  padding-top: 390px;
+  background: url(../img/check_main_img.png) no-repeat center top;
+   
+}
+
+ .tv{
+	position:absolute;
+	z-index:99;
+	top:0;
+	left:0;
+}
+#checkImgs .slider {
+  width: 980px;
+  margin: 0 auto;
+  position:relative;
+ /* background:url(../img/tv.png) no-repeat #F3F1F1;*/
+ 
+}
+#checkSlider {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#checkSlider li {
+  width: 978px;
+  display: table;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+#checkSlider li .image,
+#checkSlider li .info {
+  display: table-cell;
+  padding: 20px;
+  vertical-align: middle;
+}
+#checkSlider li .info {
+  padding-left: 0;
+  text-align: left;
+}
+#checkSlider li .info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#checkSlider li .info p {
+  color: #444;
+  line-height: 1.8;
+}
+

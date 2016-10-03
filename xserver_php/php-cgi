@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/php-fcgi5.6 -c /home/tvision-jp/tvisioninsights.co.jp/xserver_php/php.ini

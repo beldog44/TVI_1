@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* about ---------------------------------------
+------------------------------------------------ */
+#bodyAbout {
+  min-width: 980px;
+  background: url(../img/bg_body.gif) no-repeat left top;
+  background-size: 100% auto;
+  color: #444;
+}
+
+#aboutBlock {
+  padding: 110px 0;
+}
+#aboutBlock h2 {
+  text-align: center;
+}
+#aboutBlock #aboutLead {
+  line-height: 1.8;
+  padding: 65px 70px 110px;
+}
+
+#staffList {
+  padding: 0 80px 60px 80px;
+}
+#staffList li {
+  padding-bottom: 90px;
+}
+#staffList li .image {
+  float: left;
+  text-align: left;
+  width: 220px;
+}
+#staffList li .info {
+  width: 600px;
+  float: left;
+}
+#staffList li .info h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+#staffList li .info h3 span {
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+}
+#staffList li .info p {
+  line-height: 1.8;
+}
+
+#aboutOutline {
+  padding: 0 45px;
+  margin-bottom: 80px;
+  line-height: 1.8em;
+}
+#aboutOutline dt {
+  width: 9em;
+}
+#aboutOutline dd {
+  margin: -1.8em 0 0 0;
+  padding: 0 0 .6em 10em;
+}
+
+#awardsBlock {
+  padding-bottom: 90px;
+}
+#awardsBlock h2 {
+  margin-bottom: 40px;
+}
+#awardsBlock ul li {
+  display: inline-block;
+  margin: 0 12px;
+  vertical-align: middle;
+}

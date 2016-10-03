@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* Reset CSS 2.0 -------------------------------
+------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+  vertical-align: bottom;
+}
+strong {
+  font-weight: bold;
+}
+
+/* contact ---------------------------------------
+------------------------------------------------ */
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+	line-height: 1.6;
+	color: #fff;
+  background-color: transparent;
+  text-align: center;
+}
+
+input, textarea, button {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/* placeholder */
+:placeholder-shown { color: #bbb; }
+::-webkit-input-placeholder { color: #bbb; }
+:-moz-placeholder { color: #bbb; opacity: 1; }
+::-moz-placeholder { color: #bbb; opacity: 1; }
+:-ms-input-placeholder { color: #bbb; }
+    
+#contactBlock {
+  max-width: 910px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+#contactBlock h1{
+  font-size: 24px;
+}
+
+#contactItems {
+  padding: 45px 0 35px 0;
+}
+
+#contactItems:before,
+#contactItems:after { 
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+} 
+#contactItems:after {
+  clear: both;
+}
+#contactItems {
+  zoom: 1;
+}
+
+#contactLeft,
+#contactRight {
+  width: 50%;
+  float: left;
+}
+#contactLeft div {
+  position: relative;
+  padding: 0 10px 10px 0;
+}
+#contactRight div {
+  padding: 0 0 10px 10px;
+}
+
+#contactBlock input,
+#contactBlock textarea {
+  width: 100%!important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contactLeft div input {
+  padding: 0 13px;
+  font-size: 18px;
+  line-height: 52px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#contactLeft div input.problem {
+  background-color: #f9eaea;
+}
+
+#contactRight div textarea {
+  height: 424px!important;
+  padding: 10px 13px;
+  font-size: 18px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.formBtn button {
+  width: 440px;
+  height: 65px;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  background: #E74B3B;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.formBtn button[disabled] {
+  color: #999;
+  background-color: #666;
+  cursor: default;
+}
+
+#mfp_error,
+#mfp_warning,
+#mfp_hidden,
+#mfp_loading,
+#mfp_loading_screen,
+#mfp_overlay_background,
+#mfp_overlay,
+.mfp_err {
+  display: none;
+}
+#contactLeft div.mfp_err {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 5px;
+  padding: 0 10px;
+  line-height: 42px;
+  color: #fff;
+  text-align: left;
+  background: #c00;
+  background: rgba(255,50,50,0.8);
+  white-space: nowrap;
+  font-weight: bold;
+  -webkit-text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  -moz-text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#contactLeft div.mfp_err:after {
+  content: "";
+	position: absolute;
+	top: 50%; left: -8px;
+	margin-top: -8px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 8px 8px 8px 0;
+	border-color: transparent #c00 transparent transparent;
+	border-color: transparent rgba(255,50,50,0.8) transparent transparent;
+}
+
+#contactThanks {
+  max-width: 910px;
+  margin: 0 auto;
+  padding-top: 250px;
+  text-align: center;
+}
+#contactThanks h1{
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+#contactThanks p {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+#contactThanks #closeBtn a {
+  display: block;
+  width: 440px;
+  height: 65px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 65px;
+  color: #fff;
+  text-decoration: none;
+  background: #E74B3B;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
+#mfp_thanks{
+	display:none;
+}

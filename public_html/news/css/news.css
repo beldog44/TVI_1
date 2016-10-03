@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* news ---------------------------------------
+------------------------------------------------ */
+#bodyNews {
+  min-width: 980px;
+  background: url(../img/bg_body.jpg) no-repeat right top;
+}
+
+#newsBlock {
+  padding: 110px 0;
+}
+#newsBlock h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#newsOuter {
+  min-width: 980px;
+  padding: 30px 0 0 0;
+  background: #fff;
+  background: rgba(255,255,255,0.5);
+}
+
+#newsInner {
+  min-height: 650px;
+  padding: 15px 0 40px 0;
+  background: #fff;
+  background: rgba(255,255,255,0.5);
+}
+
+#newsControl {
+  width: 980px;
+  margin: 0 auto 20px auto;
+  text-align:left;
+}
+#newsControl .newsSelect {
+  position: relative;
+  width: 190px;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  vertical-align: middle;
+}
+
+#newsControl .selectCr span {
+  display: inline-block;
+  padding: 5px 0 5px 25px;
+  cursor: pointer;
+  background: url(../img/arrow_down.png) no-repeat left center;
+}
+
+#newsControl .selectList {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #f2f2f2;
+}
+#newsControl .selectList li {
+  padding: 10px 20px 10px 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+  background: url(../../common/img/arrow_link.png) no-repeat 10px center;
+  background-size: 8px auto;
+}
+
+.newsList {
+  width: 970px;
+  margin: 0 auto;
+}
+.newsList li {
+  float: left;
+  width: 290px;
+  margin: 0 15px;
+  padding-bottom: 50px;
+}
+.newsList li .image {
+  margin-bottom: 25px;
+   width:288px;
+   height:178px;
+  
+}
+.newsList li .image img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  overflow:hidden;
+  height:178px;
+  width:288px;
+}
+.newsList li .info {
+  padding-left: 20px;
+  text-align: left;
+}
+.newsList li .info .date {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #aaa;
+}
+.newsList li .info .date .cat {
+  display: inline-block;
+  padding-left: 1em;
+  margin-left: 1em;
+  border-left: 1px solid #ddd;
+}
+.newsList li .info h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.newsList li .info .text {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+
+/* news detail ---------------------------------------
+------------------------------------------------ */
+
+#newsInnerdetail{
+	width:980px;
+	margin:0 auto;
+  padding: 30px 50px 0;
+   background: #fff;
+  background: rgba(255,255,255,0.5);
+  text-align:left;
+
+}
+
+
+	
+	
+#newsInnerdetail .image {
+  margin-bottom: 25px;
+}
+#newsInnerdetail .image img {
+  display: block;
+  margin: 30px 30px 30px 0;
+  border: 1px solid #ddd;
+  float:left;
+  width:288px;
+  
+}
+#newsInnerdetail .info {
+  padding-left: 20px;
+  text-align: left;
+  width:640px;
+	float:right;
+
+}
+#newsInnerdetail .info .date {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #aaa;
+}
+#newsInnerdetail .info .date .cat {
+  display: inline-block;
+  padding-left: 1em;
+  margin-left: 1em;
+  border-left: 1px solid #ddd;
+}
+#newsInnerdetail .info h3 {
+  margin-bottom: 15px;
+  font-size: 34px;
+}
+
+#newsInnerdetail .article .companyInfo{
+	margin:40px 0 0;
+	padding:40px 0;
+	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
+	
+}
+
+#newsInnerdetail .article{
+		padding:0 0 100px;
+}
+
+#newsInnerdetail .article p{
+  font-size: 14px;
+  line-height: 1.8;
+  margin:0 0 1.4em;
+}
+	
+
+#newsInnerdetail .article .companyInfo strong{
+	font-size:18px;
+	display:block;
+	margin:0 0 20px;
+}
+
+
+#newsInnerdetail .article .returnNewsBtn{
+	display:block;
+	margin:20px 0 0;
+	
+}

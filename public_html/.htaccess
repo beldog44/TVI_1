@@ -1,0 +1,4 @@
+suPHP_ConfigPath /home/tvision-jp/tvisioninsights.co.jp/xserver_php/
+AddHandler fcgid-script .php .phps
+FCGIWrapper "/home/tvision-jp/tvisioninsights.co.jp/xserver_php/php-cgi" .php
+FCGIWrapper "/home/tvision-jp/tvisioninsights.co.jp/xserver_php/php-cgi" .phps
